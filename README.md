@@ -1,5 +1,5 @@
 # Compute Wallet Value - BDD
-
+Maxime d'Harboullé 4AL1
 ## Install dependencies
 ```npm install```
 
@@ -11,7 +11,7 @@
 
 ## Code
 Prototype:
-``` 
+```ts
 async function computeWalletValue(wallet: Wallet, returnValueCurrency: Currencies = Currencies.EUR, date: string = 'latest'): Promise<number>
 ```
 

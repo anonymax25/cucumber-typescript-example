@@ -15,5 +15,5 @@ Prototype:
 async function computeWalletValue(wallet: Wallet, returnValueCurrency: Currencies = Currencies.EUR, date: string = 'latest'): Promise<number>
 ```
 
-Check-out testIndex.ts for an example of how to call the function
+Check-out testIndex.ts for an example of how to call the function or run it by using ```npm run start:test```
 

@@ -1,4 +1,4 @@
-Feature: You want to compute the value of a wallet at different dates
+Feature: You want to compute the value of your wallet at set dates
 
     Background: Wallet
         Given I have a wallet

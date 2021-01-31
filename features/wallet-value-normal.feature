@@ -1,4 +1,4 @@
-Feature: You want to compute the value of a normal wallet
+Feature: You want to compute the value of your normal wallet
     You want to know how much value your wallet is in a given currency
 
     Background: Wallet

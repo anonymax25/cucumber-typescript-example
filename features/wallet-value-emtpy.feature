@@ -1,4 +1,4 @@
-Feature: You want to compute the value of a empty wallet
+Feature: You want to compute the value of your empty wallet
     You want to know how much value your wallet is in a given currency
 
     Background: Wallet

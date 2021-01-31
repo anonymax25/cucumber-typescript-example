@@ -6,7 +6,7 @@
   "scripts": {
     "build": "rimraf ./build && tsc",
     "test:cucumber": "cucumber-js -p default",
-    "test:unit": "rimraf ./build && tsc && chai ./test/test.js"
+    "test:unit": "rimraf ./build && tsc && mocha ./test/test.js"
   },
   "keywords": [
     "gherkin",
@@ -24,6 +24,7 @@
     "chai": "^4.2.0",
     "cucumber-pretty": "^6.0.0",
     "cucumber-tsflow": "^4.0.0-rc.1",
+    "mocha": "^8.2.1",
     "nodemon": "^2.0.6",
     "rimraf": "^3.0.2",
     "ts-node": "^9.1.1",

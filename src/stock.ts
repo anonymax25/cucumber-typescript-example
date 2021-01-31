@@ -1,4 +1,4 @@
-import { Currencies } from "../enums/currencies.enum"
+import { Currencies } from "./enums/currencies.enum"
 
 export class Stock {
     currency: Currencies

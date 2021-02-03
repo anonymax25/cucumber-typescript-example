@@ -16,5 +16,5 @@ async function computeWalletValue(wallet: Wallet, returnValueCurrency: Currencie
 ```
 **Possible currencies:** CAD HKD ISK PHP DKK HUF CZK AUD RON SEK IDR INR BRL RUB HRK JPY THB CHF SGD PLN BGN TRY CNY NOK NZD ZAR USD MXN ILS GBP KRW MYR
 
-Check-out our unit test :```./test.test.js ``` for an  example of how to call the function or run it by using ```npm run test:unit```
+Check-out our unit test :```./test/test.js ``` for an  example of how to call the function or run it by using ```npm run test:unit```
 

@@ -1,0 +1,14 @@
+name: test cucumber
+on:
+  push:
+    branches: [ master ]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Run cucumber test
+        run: |
+          npm install
+          npm run build
+          npm run test:cucumber

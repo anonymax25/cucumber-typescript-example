@@ -1,15 +1,13 @@
-name: Run tests
+name: test unit
 on:
   push:
     branches: [ master ]
-  workflow_dispatch:
-
 jobs:
   test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Run a multi-line script
+      - name: Run unit test
         run: |
           npm install
           npm run build

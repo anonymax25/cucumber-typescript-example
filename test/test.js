@@ -13,6 +13,6 @@ describe('Test build index', function() {
       wallet.stocks.push(new Stock(Currencies.RUB, 3200))
       const result = await Wallet.computeValue(wallet, baseCurrency, '2021-01-17')
       
-      assert.strictEqual(result, 63.99);
+      assert.strictEqual(result, 64.04);
   });
 });

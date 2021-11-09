@@ -1,6 +1,10 @@
-# Compute Wallet Value - BDD
+# Cucumber & Typescript Examample
+## Compute Wallet Value - Behavior Driven Developement
 Maxime d'Harboullé 4AL1
-*Behavior Driven Developement school project to use cucumber for testing. Choosen language: typescript*
+*Behavior Driven Developement school project to use cucumber for testing.*
+ 
+Choosen language: Typescript
+
 ## Install dependencies
 ```npm install```
 

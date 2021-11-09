@@ -1,6 +1,9 @@
 # Cucumber & Typescript Examample
 
-![example workflow](https://github.com/anonymax25/cucumber-typescript-example/actions/workflows/<WORKFLOW_FILE>/badge.svg)
+![cucumber tests](https://github.com/anonymax25/cucumber-typescript-example/actions/workflows/test_cucumber.yml/badge.svg) 
+
+![unit tests](https://github.com/anonymax25/cucumber-typescript-example/actions/workflows/test_unit.yml/badge.svg)
+
 
 ## Author
 [Maxime d'Harboullé](https://github.com/anonymax25)

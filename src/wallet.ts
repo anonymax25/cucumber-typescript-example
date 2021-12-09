@@ -2,22 +2,29 @@ import axios from "axios";
 import { parse } from "url";
 import { Currencies } from "./enums/currencies.enum";
 import { Stock } from "./stock"
+import * as dotenv from "dotenv";
+dotenv.config();
 
 export class Wallet {
 
     stocks: Stock[]
+
 
     constructor() {
         this.stocks = []
     }
 
     public static async computeValue(wallet: Wallet, returnValueCurrency: Currencies = Currencies.EUR, date: string = 'latest'): Promise<number> {
-        const exchangeRateApiUrl = `https://api.exchangeratesapi.io/${date}`
+        const exchangeRateApiUrl = `http://api.exchangeratesapi.io/${date}`
     
         let total: number = 0
         const searchCurrencies: string = wallet.stocks.filter(stock => stock.currency !== returnValueCurrency).map(stock => stock.currency).join(',')
         try {
-            const response = await axios.get(`${exchangeRateApiUrl}?base=${returnValueCurrency}&symbols=${searchCurrencies}`)
+            const response = await axios.get(`${exchangeRateApiUrl}?access_key=${process.env.API_KEY}&base=${returnValueCurrency}&symbols=${searchCurrencies}`)
+            if(!response || !response.data || !response.data.success){
+                throw new Error("Api call failed!")
+            }
+            
             const rawExchangeRatesRatios = response.data.rates
             const exchangeRatesRatios = new Map<string, number>(Object.entries(rawExchangeRatesRatios));
             for (let item of exchangeRatesRatios) {

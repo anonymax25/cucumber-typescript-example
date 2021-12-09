@@ -9,6 +9,8 @@ jobs:
       - uses: actions/checkout@v2
       - name: Run cucumber test
         run: |
+          touch .env
+          API_KEY=${{ secrets.API_KEY }} >> .env
           npm install
           npm run build
           npm run test:cucumber
